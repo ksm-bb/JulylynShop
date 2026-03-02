@@ -636,8 +636,8 @@
                   
                   <div className="flex gap-2 mb-3 bg-white/50 p-1.5 rounded-full backdrop-blur-md border-[3px] border-white shadow-sm">
                       <button onClick={() => setFilterType('all')} className={`flex-1 text-[9px] font-black py-2 rounded-full transition-all tracking-wider ${filterType === 'all' ? 'bg-white shadow-sm' : 'text-gray-400 hover:bg-white/30'}`} style={{ color: filterType === 'all' ? COLORS.pinkDeep : '' }}>ทั้งหมด</button>
-                      <button onClick={() => setFilterType('pending')} className={`flex-1 text-[9px] font-black py-2 rounded-full transition-all tracking-wider ${filterType === 'pending' ? 'bg-white shadow-sm' : 'text-gray-400 hover:bg-white/30'}`} style={{ color: filterType === 'pending' ? COLORS.orangeDeep : '' }}>ยังไม่ได้เริ่ม</button>
-                      <button onClick={() => setFilterType('done')} className={`flex-1 text-[9px] font-black py-2 rounded-full transition-all tracking-wider ${filterType === 'done' ? 'bg-white shadow-sm' : 'text-gray-400 hover:bg-white/30'}`} style={{ color: filterType === 'done' ? COLORS.blueDeep : '' }}>เสร็จแล้ว</button>
+                      <button onClick={() => setFilterType('pending')} className={`flex-1 text-[9px] font-black py-2 rounded-full transition-all tracking-wider ${filterType === 'pending' ? 'bg-white shadow-sm' : 'text-gray-400 hover:bg-white/30'}`} style={{ color: filterType === 'pending' ? COLORS.orangeDeep : '' }}>ติดคิว</button>
+                      <button onClick={() => setFilterType('done')} className={`flex-1 text-[9px] font-black py-2 rounded-full transition-all tracking-wider ${filterType === 'done' ? 'bg-white shadow-sm' : 'text-gray-400 hover:bg-white/30'}`} style={{ color: filterType === 'done' ? COLORS.blueDeep : '' }}>คิวว่าง</button>
                   </div>
 
                   <div className="flex justify-end mb-4 pr-1">
@@ -858,5 +858,6 @@
     root.render(<App />);
   </script>
 </body>
+
 
 </html>
